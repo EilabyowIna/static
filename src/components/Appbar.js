@@ -5,14 +5,14 @@ import leaves from '../assets/bg-leaves.svg'
 
 const Appbar = () => {
     return (
-        
-        <nav class="container">
-           
-            <div class="nav">
-            <div class="logor">
-                <img src={logo} alt="Logo" class="logorr"/> 
-                <h1 class="app"> Protoapp</h1>
+        <nav className="container">
+            <div className="body">
+            <div className="nav">
+            <div className="logor">
+                <img src={logo} alt="Logo" className="logorr"/> 
+                <h1 className="app"> Protoapp</h1>
                 <h2>Home</h2>
+            </div>
             </div>
             </div>
         </nav>

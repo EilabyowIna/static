@@ -1,23 +1,28 @@
-.body {
-    position: absolute;
-    right: 0px;
-    top: -8.8%;
-    height: 650px;
+.container {
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    
 }
-
-.another {
+.body {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    left: -105px;
-    top: 290px;
-    height: 400px;
+    top: 0px;
+    background-position: right top;
     z-index: -1;
 }
 
+
+
 .hero {
     min-width: 20%;
-    width: 30%;
-    margin-left: 200px;
-    margin-top: 100px;
+    width: 500px;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    
+    
 }
 
 .hero header {
@@ -59,17 +64,27 @@ button {
     position: absolute;
     width: 100%;
     top: 540px;
+    
 }
 
 .meet {
     display: block;
     position: absolute;
-    top: 750px;
+    top: 600px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
+    margin: 70px 0px 20px 0px;
+}
+
+.meet{
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .meet .protoapp {
@@ -78,11 +93,10 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
-    
 }
 
 .protoapp h2 {
-    max-width: 35%;
+    width: 35;
     font-size: 15px;
 }
 
@@ -93,4 +107,326 @@ button {
 
 .discover img {
     height: 350px;
+}
+
+.discover {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 35px;
+}
+
+.divT h3, h1 {
+    
+    text-align: right;  
+}
+
+.divT{
+    width: 450px;
+    transform: translateY(0%);
+}
+
+.aug {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+
+.divA h3, h1{ 
+    text-align: left;
+}
+
+.divA h1 {
+    text-align: left;
+}
+
+.divA{
+    width: 450px;
+
+}
+
+.aug img {
+    height: 200px;
+}
+
+
+.end {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    gap: 15px;
+}
+
+
+.divE h3, h1 { 
+    text-align: right;
+}
+
+.divE{
+    width: 450px;
+    transform: translateY(0%);
+}
+
+.end img {
+    height: 200px;
+}
+
+.leavesone {
+    position: absolute;
+    top: 400px;
+}
+
+.leavesone img {
+    position: absolute;
+    top: 400px;
+    z-index: -1;
+}
+
+.colored {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 900px;
+    height: 100%;
+    margin-top: 150px;
+    
+}
+
+.deep {
+    width: 100vw;
+    height: 600px;
+    background-color: #2248E2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+
+}
+
+.text {
+    margin: auto;
+}
+.deep .text {
+    justify-content: center;
+    
+    margin: auto;
+}
+
+.deep header {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.deep h3 {
+    font-weight: 100;
+}
+
+.deep .head, .three {
+    color: #fff;
+    text-align: center;
+}
+
+.storess {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0px;
+
+}
+
+.storess img {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.last {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    border: solid;
+    height: 100%;
+    float: bottom;
+    
+}
+
+@media (max-width: 640px) {
+    .container{
+     width: 100vw;
+     height: 100vh;
+     margin: auto;
+    }
+    
+    .body {
+      max-width: 480px;
+      height: auto;
+      right: 0%;
+    }
+
+    .hero {
+        width: 100vw;
+    }
+
+    .hero header {
+        font-size: 50px;
+    }
+
+    .hero .desc {
+        text-align: left;
+        font-size: 15px;
+        max-width: 330px;
+    }
+
+    
+    button {
+        background-color: #2248e2;
+        color: white;
+        font-weight: bold;
+        padding:  12px 15px 12px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 10px;
+    }
+
+    .stores {
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        top: 500px;
+    }
+
+
+    .meet {
+        width: 100%;
+        margin: 155px 0px 25px 0px;
+    }
+    .protoapp {
+        width: 100%;
+    }
+
+    .protoapp h2{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .protoapp header {
+        font-size: 30px;
+    }
+
+
+        
+    .discover img {
+        height: 200px;
+        margin-right: 10px;
+        
+    }
+
+    .discover {
+        display: flex;
+        width: 100%;
+    }
+
+    .divT h3, h1 {
+        text-align: right;  
+        width: 100%;
+    }
+
+    .divT h3 {
+        font-size: 11px;
+
+    }
+
+    .divT{
+        width: 450px;
+        transform: translateY(0%);
+    }
+
+    .another {
+        position: absolute;
+        left: 0px;
+        top: 400px;
+        height: 150px;
+        z-index: -1;
+    }
+
+    .aug img {
+        height: 200px;
+        width: 100%;
+
+    }
+
+    .aug {
+        display: flex;
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    .divA h3, h1 {
+        text-align: left;  
+        width: 100%;
+        margin-right: 12px;
+    }
+
+    .divA h3 {
+        font-size: 11px;
+    }
+
+    .divA{
+        width: 450px;
+        transform: translateY(0%);
+    }
+
+    .end img {
+        height: 150px;
+        width: 100%;
+    }
+
+    .end {
+        display: flex;
+        width: 100%;
+    }
+
+    .divE h3, h1 {
+        text-align: right;  
+        width: 100%;
+    }
+
+    .divE h1, .divA h1, .divT h1 {
+        font-size: 26px;
+    }
+
+    .divE h3 {
+        font-size: 11px;
+        
+
+    }
+
+    .divE{
+        width: 450px;
+        transform: translateY(0%);
+        max-width: 235px;
+    }
+
+    .leavesone img{
+        position: absolute;
+        top: 40px;
+        width: 700px;
+        z-index: -1;
+    }
+    
 }

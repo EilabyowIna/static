@@ -1,36 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 
 * {
+
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
     font-family: 'Roboto Mono', monospace;
 }
 
-
+.body {
+    background-image: url('../assets/bg-leaves.svg');
+    background-repeat: no-repeat;  
+}
 .container{
     width: 100%;
-    height: 30%;
+    height: 30px;
 }
 
 .home{
     position: absolute;
     
-}
+}   
 
 .logor {
     display: flex;
-    gap: 10px;
-    margin-left: 200px;
-    margin-top: 15px;
+    position: absolute;
+    left: 10%;
+    top: 2%;
     cursor: pointer;
 }
 
 .logor h2 {
-    font-size: 30px;
+    font-size: 25px;
     transform: translateY(25%);
-    padding-left: 10px;
-    
+    padding-left: 10px;  
 }
 
 .logor 
@@ -39,10 +42,52 @@ h2 {
     transform: translateY(15%);
 }
 
+
 .logor h1 {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .logorr {
-    height: 100px;
+    height: 85px;
+}
+
+@media (max-width: 640px) {
+    * {
+        max-width: 100vw;
+    }
+    body {
+        background-image: url('../assets/bg-leaves.svg');
+        background-repeat: no-repeat;  
+        background-size: 750px;
+        background-position: right top;
+    }
+
+    .container {
+        width: 100%;
+        height: 30%;
+        max-width: 100vw;
+    }
+
+    .logor {
+        display: flex;
+        gap: 10px;
+        position: absolute;  /* Update the position value to a valid value */
+        cursor: pointer;
+        align-items: center;
+    }
+
+    .logor h2 {
+        font-size: 15px;
+        transform: translateY(5%);
+        padding-left: 0px;  
+    }
+
+    .logor h1 {
+        font-size: 25px;
+        transform: translateY(0%);
+    }
+
+    .logorr {
+        height: 35px;
+    }
 }
