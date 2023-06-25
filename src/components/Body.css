@@ -173,16 +173,11 @@ button {
     height: 200px;
 }
 
-.leavesone {
-    position: absolute;
-    top: 400px;
+.leavesones {
+    background-image: url('../assets/bg-decals.svg');
 }
 
-.leavesone img {
-    position: absolute;
-    top: 400px;
-    z-index: -1;
-}
+
 
 .colored {
     display: flex;
@@ -193,6 +188,8 @@ button {
     top: 900px;
     height: 100%;
     margin-top: 150px;
+    
+    
     
 }
 
@@ -205,7 +202,11 @@ button {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 0px;
+    top: 5px;
+    background-image: url('../assets/bg-decals2.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    
 
 }
 
@@ -254,27 +255,119 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    position: absolute;
+    top: 2700px;
+    z-index: 2;
+    height: 80vh;
 }
+
+    .textt header {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .textt h3 {
+        text-align: center;
+        font-weight: normal;
+    }
+
+    .textt {
+        margin-bottom: 50px;
+    }
+
+
+
 .card {
-    border: solid;
     height: 100%;
-    float: bottom;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url('../assets/bg-decals3.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100%;
     
 }
 
+.card .laravel, .card .glasses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+    height: 45%;
+    background-color: #ffc107;
+    border-radius: 20px;
+    color: white;
+    width: 35%;
+    justify-content: center;
+}
+
+.card .laravel h3, .card .glasses h3 {
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.card .laravel header, .card .glasses header {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.card .laravel h2, .card .glasses h2 {
+    font-weight: normal;
+    font-size: 16px;
+    
+}
+
+.laravel .descr,.glasses .descrD {
+
+    padding-right: 10px;   
+}
+
+.laravel .play, .glasss .glass {
+    max-width: 100%;
+    width: 60%;
+}
+
+.larvel, .glasss {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.laravel .auto, .glasses .autoG {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    padding: 5px 7px 5px 7px; 
+}
+
+
+.card .glasses {
+    background-color: #17a2b8;
+}
+
+
+
+
 @media (max-width: 640px) {
     * {
-        overflow-x: hidden;
+       
+        max-width: 100%;
+        box-sizing: border-box;
     }
     
     .container{
      width: 100vw;
      height: 100vh;
-     margin: auto;
+    
     }
     
     .body {
-      max-width: 480px;
       height: auto;
       right: 0%;
     }
@@ -318,7 +411,7 @@ button {
 
     .meet {
         width: 100%;
-        margin: 155px 0px 25px 0px;
+        margin: 75px 0px 50px 0px;
     }
     .protoapp {
         width: 100%;
@@ -345,6 +438,8 @@ button {
     .discover {
         display: flex;
         width: 100%;
+        margin-top: 0px;
+        
     }
 
     .divT h3, h1 {
@@ -368,6 +463,7 @@ button {
         top: 400px;
         height: 150px;
         z-index: -1;
+        
     }
 
     .aug img {
@@ -380,6 +476,7 @@ button {
         display: flex;
         width: 100%;
         margin-right: 10px;
+  
     }
 
     .divA h3, h1 {
@@ -405,6 +502,7 @@ button {
     .end {
         display: flex;
         width: 100%;
+
     }
 
     .divE h3, h1 {
@@ -425,7 +523,6 @@ button {
     .divE{
         width: 450px;
         transform: translateY(0%);
-        max-width: 235px;
     }
 
     .leavesone img{
@@ -434,5 +531,131 @@ button {
         width: 700px;
         z-index: -1;
     }
+
+        
+    .colored {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 900px;
+        height: 100%;
+        margin-top: 150px;
+        max-width: 100vw;
+
+    }
+
+    .deep {
+        height: 600px;
+        background-color: #2248E2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0px;
+        width: 100vw;
+
+    }
+
+    .text {
+        margin: auto;
+    }
+    .deep .text {
+        justify-content: center;
+        margin: auto;
+    }
+
+    .deep header {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .deep h3 {
+        font-weight: 100;
+        font-size: 15px;
+    }
+
+    .deep .head, .three {
+        color: #fff;
+        text-align: center;
+    }
+
+    .storess {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 0px;
+
+    }
+
+    .storess img {
+        width: 120px;
+        height: auto;
+        cursor: pointer;
+        align-items: center;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width: 840px) {
+    * {
+        max-width: 100%;
+    }
+    .card {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card .laravel, .card .glasses {
+        width: 70%;
+        height: 40%;
+    }
+
+        
+    .card .laravel h3, .card .glasses h3 {
+        font-weight: normal;
+        font-size: 10px;
+        margin-top: 25px;
+    }
+
+    .card .laravel header, .card .glasses header {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+
+    .card .laravel h2, .card .glasses h2 {
+        font-weight: normal;
+        font-size: 12px;
+        
+    }
+
+    .laravel .descr,.glasses .descrD {
+
+        padding-right: 10px;   
+    }
+
     
+    .textt header {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .textt h3 {
+        font-size: 16px;
+        text-align: center;
+        font-weight: normal;
+    }
+
+    .textt {
+        margin-bottom: 50px;
+    }
+
 }

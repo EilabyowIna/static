@@ -28,8 +28,8 @@ const Body = () => {
                 </button>
             </div>
 
-            <div className="leavesone">
-                <img src={leavesone}></img>
+            <div className="leavesones">
+                
             </div>
             
 
@@ -79,9 +79,6 @@ const Body = () => {
                     <img src={appstore} className="play two"></img>
                     </div>
                     </div>
-
-                    
-                    
                     
                 </div>
             </div>
@@ -93,10 +90,30 @@ const Body = () => {
                 </div>
                 <div className="card">
                 <div className="laravel">
-                <img src={lar} className="play"></img>
+                        <div className='larvel'>
+                        <img src={lar} className="play"></img>
+                        <h2 className="auto">AUTOMATION</h2>
+                        </div>
+                        <div className="descr">
+                        <h3>Roll out</h3>
+                        <header>Automatic</header>
+                        <header>Prototyping</header>
+                        <h2>Webpack is the most poweful and flexible asset compilation tool available today. With that power, however, comes a certain level of complexity</h2>
+                        </div>
                 </div>
+
                  <div className="glasses">
-                <img src={glass} className="play"></img>
+                        <div className='glasss'>
+                         <img src={glass} className="glass"></img>
+                         <h2 className="autoG">Simplicity</h2>            
+                         </div>
+
+
+                        <div className="descrD">
+                        <h3>SIP COFFEE</h3>
+                        <header>Complexity</header>
+                        <header>Simplified</header>
+                        <h2>Webpacak is the most poweful and flexible asset compilation tool available today. With that power, however, comes a certain level of complexity</h2></div>
                 </div>
                 </div>
             </div>
